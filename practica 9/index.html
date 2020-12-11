@@ -6,15 +6,41 @@
     <link rel="stylesheet" href="style.css" title="Practica 9">
 </head>
 <body>
-   <h1>Formularios</h1> 
+    <h1>Formularios</h1> 
 <form action="comprar.php" method="GET">
     <p>Nombre <input type="text" name="nom" id="nom"></p>
 
     <p> Apellidos <input type="text" name="cognoms" id="cognoms"> </p>
 
-    <p> <input type="submit" value="Enviar DAM">
-        <input type="reset" value="reset"> </p>
 
+    <p>Pasword <input type="password" name="password" id="password"></p>
+
+<p>   Observaciones</p>
+<textarea name="texto" rows="5" cols="44"></textarea>
+
+<p>
+<input type="file"   id="archivo"></p>
+<p> Selector
+<select name="menu">
+    <option selected>...</option>
+    <optgroup label="Grupo1">
+      <option value="1">Opción uno</option>
+      <option value="2">Opción dos</option>
+      <option value="3">Opción tres</option>
+    </optgroup>
+    <optgroup label="Grupo2">
+      <option value="4">Opción cuatro</option>
+      <option value="5">Opción cinco</option>
+      <option value="6">Opción seis</option>
+    </optgroup>
+  </select>
+</p>
+
+
+
+    <p> <input type="submit" value="Enviar DAM">
+        <input type="reset" value="reset"> 
+    <input  type="image"    value="img/boton.jpg"  width="76"  ></p>
 
 
 </form>
