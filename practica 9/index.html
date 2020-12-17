@@ -6,18 +6,26 @@
     <link rel="stylesheet" href="style.css" title="Practica 9">
 </head>
 <body>
-    <h1>Formularios</h1> 
+   <h1>Formularios</h1> 
 <form action="comprar.php" method="GET">
-    <p>Nombre <input type="text" name="nom" id="nom"></p>
-
+    <p>Nombre <input type="text" name="nom" id="nom" placeholder="Nombre"></p>
     <p> Apellidos <input type="text" name="cognoms" id="cognoms"> </p>
-
-
     <p>Pasword <input type="password" name="password" id="password"></p>
-
+    <p><input type="radio" name="boton"> Hombre<br>
+    <input type="radio" name="boton"> Mujer
+    <input type="reset" value="Borrar"></p>
+    <input type="color" name="colorElegido">
+    <p>Indique su nivel (de 0 a 1, de 0,1 en 0,1):
+    <input type="range" name="rango"
+      min="0" max="1" step="0.1"></p>
+   <p> Fecha: <input type="date" name="fecha"></p>
+   <label> <input type="checkbox" name="casilla" value="hola" </label>Eres tonto?
+   <p>Hora: <input type="time" name="hora"></p>
+<p>URL: <input type="url" name="direccion" size="40"></p>//Lo mismo con el email , telefono...
 <p>   Observaciones</p>
 <textarea name="texto" rows="5" cols="44"></textarea>
-
+<p> Formulario Numero</p>
+<input type="number" name="numero" step="any">//step en augmento del numero puesto
 <p>
 <input type="file"   id="archivo"></p>
 <p> Selector
@@ -38,12 +46,39 @@
 
 
 
+<fieldset>
+  <legend>Datos personales</legend>
+  <p>Nombre: <input type="text" name="nombre" size="30"></p>
+  <p>Edad: <input type="number" name="edad"></p>
+</fieldset>
+
+<fieldset>
+  <legend>Cultura general</legend>
+  <p>Capital de Noruega:
+    <input type="radio" name="p1" value="1"> Copenhague
+    <input type="radio" name="p1" value="2"> Helsinki
+    <input type="radio" name="p1" value="3"> Oslo
+  </p>
+  <p>Fecha de la Revolución francesa:
+    <input type="radio" name="p2" value="1"> 1492
+    <input type="radio" name="p2" value="2"> 1789
+    <input type="radio" name="p2" value="3"> 1917
+  </p>
+</fieldset>
+
+
+
+
     <p> <input type="submit" value="Enviar DAM">
         <input type="reset" value="reset"> 
     <input  type="image"    value="img/boton.jpg"  width="76"  ></p>
 
 
+
 </form>
+
+
+
 
 </body>
 </html>
